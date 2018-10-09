@@ -1,0 +1,54 @@
+body{
+    background-color: grey;
+}
+
+ .header{
+    padding: 80px; /* some padding */
+    text-align: center; /* center the text */
+    background:blue; /* green background */
+    color: white; /* white text color */
+    }
+
+/* css for the header container */
+#headerContainer {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+/* information for the body */
+#BodyContainer {
+    background-color: darkgrey;
+}
+
+/* middle text for image */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: lightskyblue;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.block:hover {
+    background-color:lightblue;
+    color: black;
+}
