@@ -9,4 +9,15 @@ monday (October 8th 2018) plan
 ---------------------------------
 Actually done (October 8th 2018)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+-I finished up the template for the main page.
+-Almost finished the intial design for the template.
+--------------------------------
+Tuesday (October 9th 2018) plan
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-link the template page with the main page
+-finish the editable webpage
+-finish the forms for the template html page
+-------------------------------
+Actually done (October 9th 2018)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-

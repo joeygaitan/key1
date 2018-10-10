@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link rel="script" href = "../js/main.js">
+    <title>Tab Header</title>
+    <style>
+        body{
+            font-family: 'Times New Roman';
+            background-color: white;
+        }
+        
+        .bg-cover{
+            background-size: cover;
+            height: 100%;
+            color: white;
+        }
+
+        #navBar{
+            background-color: grey;
+            padding-top: 18px;
+            text-align: center;
+        }
+
+        #titlesBody{
+            text-align: center;
+            background-color: red;
+        }
+        #nestBody{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron bg-cover text-center" style="margin-bottom:0; background-image: url('images/example.jpg');" id="jumboTronTop ">
+            <div class="container">
+              <h1 class="display-3 mb-1"><img src="images/m.gif" style="border-radius: 25%;" height="250px" width="250px"></h1>
+              <h3 class="lead">job</p>
+                <p>name</p>
+                <P>location</P>
+            </div>
+    </div>
+    <!-- The Contact information bar -->
+    <div class="container-fluid">
+        <div class = "row" id ="navBar">
+            <div class = "col-md-3">
+                <p>707-495-7284</p>
+            </div>
+            <div class ="col-md-3">
+                <p>joeygaitan707@gmail.com</p>
+            </div>
+            <div class="col-md-3">
+                <a href="https://github.com/joeygaitan"><i class="fa fa-github-square" style="font-size:24px;color:black;"></i></a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com/in/joey-gaitan-a40961110/"><i class="fa fa-linkedin-square" style="font-size:24px;color:blue;"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "container-fluid">
+        <div class ="row" id = "proEDEX">
+            <div class ="col-sm-6" id = "titlesBody">
+                <h2>
+                    Programming Languages
+                </h2>
+                    <p>Html, CSS, Javascript, Java, C++, Swift, C#,<br>
+                    </p>
+            </div>
+
+            <div class ="col-md-6">
+                <div class= "row">
+                    <div class ="col-md-12" id = "nestBody">
+                        <h2>
+                            Education
+                        </h2>
+                        <p>
+                            bachelors from harvard law
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class ="col-md-12" id = "nestBody">
+                        <h1>
+                            Experience
+                        </h1>
+                        <p>
+                            2 years of practing life lessons
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer style="text-align: center;">Copyright By name in year</footer>
+</body>
+</html>
