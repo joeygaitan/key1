@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-   <link rel="script" href = "../js/main.js">
-    <title>Tab Header</title>
+   <script defer src="/js/constructor.js"></script>
+    <title id ="title"></title>
     <style>
-        body{
+        #jumboTronTop{
+            margin-bottom: 0;
+            background-image : url('images/example.jpg');
             font-family: 'Times New Roman';
-            background-color: white;
+            color: aqua;
         }
         
         .bg-cover{
@@ -24,38 +26,47 @@
             background-color: grey;
             padding-top: 18px;
             text-align: center;
+            color: red;
+            font-family: 'Times New Roman';
+        }
+        
+        #bodycontainer{
+            color: red;
+            font-family: 'Times New Roman';
+            background-color: grey;
         }
 
         #titlesBody{
             text-align: center;
-            background-color: red;
         }
-        #nestBody{
-            background-color: red;
+        #footer{
+            color: red;
+            font-family: 'Times New Roman';
+            background-color: grey;
         }
     </style>
 </head>
 <body>
 
-    <div class="jumbotron bg-cover text-center" style="margin-bottom:0; background-image: url('images/example.jpg');" id="jumboTronTop ">
+    <div class="jumbotron bg-cover text-center" id="jumboTronTop">
             <div class="container">
-              <h1 class="display-3 mb-1"><img src="images/m.gif" style="border-radius: 25%;" height="250px" width="250px"></h1>
-              <h3 class="lead">job</p>
-                <p>name</p>
-                <P>location</P>
+              <h1 class="display-3 mb-1"><img src="images/m.gif" style="border-radius: 25%;" id="personalPicture" height="250px" width="250px"></h1>
+              <h3 class="lead" id="job">job</h3>
+                <h4 id = "name">name</h4>
+                <h5 id = "location">location</h5>
             </div>
     </div>
     <!-- The Contact information bar -->
     <div class="container-fluid">
         <div class = "row" id ="navBar">
             <div class = "col-md-3">
-                <p>707-495-7284</p>
+                <p id = "phone">707-495-7284</p>
             </div>
             <div class ="col-md-3">
-                <p>joeygaitan707@gmail.com</p>
+                <p id = "email">joeygaitan707@gmail.com</p>
             </div>
             <div class="col-md-3">
-                <a href="https://github.com/joeygaitan"><i class="fa fa-github-square" style="font-size:24px;color:black;"></i></a>
+                <a href="https://github.com/joeygaitan" id="githublink"><i class="fa fa-github-square" style="font-size:24px;color:black;"></i></a>
             </div>
             <div class="col-md-3">
                 <a href="https://www.linkedin.com/in/joey-gaitan-a40961110/"><i class="fa fa-linkedin-square" style="font-size:24px;color:blue;"></i></a>
@@ -63,13 +74,14 @@
         </div>
     </div>
     
-    <div class = "container-fluid">
-        <div class ="row" id = "proEDEX">
+    <!-- body information -->
+    <div class = "container-fluid" id = "bodycontainer">
+        <div class ="row">
             <div class ="col-sm-6" id = "titlesBody">
                 <h2>
                     Programming Languages
                 </h2>
-                    <p>Html, CSS, Javascript, Java, C++, Swift, C#,<br>
+                    <p id = "languages">Html, CSS, Javascript, Java, C++, Swift, C#,<br>
                     </p>
             </div>
 
@@ -79,7 +91,7 @@
                         <h2>
                             Education
                         </h2>
-                        <p>
+                        <p id = "education">
                             bachelors from harvard law
                         </p>
                     </div>
@@ -90,7 +102,7 @@
                         <h1>
                             Experience
                         </h1>
-                        <p>
+                        <p id = "Experience">
                             2 years of practing life lessons
                         </p>
                     </div>
@@ -98,7 +110,13 @@
             </div>
         </div>
     </div>
+    <!-- <form>
+        <label for="hInfoHead">Tab Header</label>
+        <input type="text" id="hInfoHead" name="hInfoHead">
 
-        <footer style="text-align: center;">Copyright By name in year</footer>
+        <label for="but">github</label>
+          <input type="text" id="but" name=" ">
+    </form>  -->
+        <footer style="text-align: center;" id = "footer"><p id = "info"></p></footer>
 </body>
 </html>
