@@ -4,7 +4,14 @@
 2nd-clone the repo
 3d-run this command in terminal, npm install
 
-![Alt text](https://github.com/TSPeterson206/Quarter-1-project/blob/master/screenshot.png "Screenshot")
+cover :)
+![Alt text](https://github.com/joeygaitan/key1/tree/master/images/cover.jpeg  "Screenshot")
+
+template which stores information into local storage
+![Alt text](https://github.com/joeygaitan/key1/blob/master/images/template.jpeg  "Screenshot")
+
+information displayed into a new portfolio html page 
+![Alt text](https://github.com/joeygaitan/key1/blob/master/images/picture.jpeg  "Screenshot")
 
 ----------------------------------
 monday (October 8th 2018) plan
