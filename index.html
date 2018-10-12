@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/save.js"> </script>
     <title>Portfolio Builder</title>
 </head>
-<body>
+<body id = "bodyIndex">
     <!-- <div class = "header"> -->
         <div class="container" id="headerContainer">
             <!-- background image for the header -->
             <img src="images/seattle.jpg" style="width:100%;">
             <!-- center text for the image -->
             <div class="centered">
-                <h1>Coder Portfolio Builder</h1>
-                <h3>If you need to get a quick Coding Portfolio then you came to the right place.<br></h3>
+                <h1 id = "h">Coder Portfolio Builder</h1>
+                <h3 id = "h">If you need to get a quick Coding Portfolio then you came to the right place.<br></h3>
             </div>
             <div class="top-left">
                     <a href="https://github.com/joeygaitan"><i class="fa fa-github-square" style="font-size:24px;color:black;"></i></a>
@@ -39,11 +40,10 @@
     </div>
 
     <footer>
-        <div class = "container" id ="footContainer"></div>
+       <h1>saved html syntax from past project and reset button</h1>
+       <h3>the button erase the html from local storage so you can start again.</h3><br>
+       <button id= "press">clear local storage</button>
+       <p id = "past"></p>
     </footer>
 </body>
-
-<footer>
-
-</footer>
 </html>

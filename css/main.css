@@ -1,4 +1,4 @@
-body{
+#bodyIndex{
     background-color: grey;
 }
 
@@ -9,7 +9,7 @@ body{
     color: white; /* white text color */
     }
 
-/* css for the header container */
+/* css for the header container * /
 #headerContainer {
     color: white;
     position: relative;
@@ -51,4 +51,9 @@ body{
 .block:hover {
     background-color:lightblue;
     color: black;
+}
+
+#h{
+    color:white;
+    text-align: center;
 }

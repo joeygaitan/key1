@@ -4,30 +4,26 @@
 //  this display all the html of the page 
 //  document.querySelector('html').outerHTML
 
-var HeaderObject = {
+var headerObject = {
     tabHeader: "header",
     fontColor: "green",
     fontSelection: "times new roman",
-    BackgroundBannerImage: "url('images/wallpaper.jpg')",
-    PersonalImage: "images/Happy.gif",
-    Job: "full stack",
+    personalImage: "",
+    headerbackgroundColor: "red",
+    job: "full stack",
     firstLastNames: "Joey Gaitan",
     location: "Seattle",
 }
 
-var contentOject ={
-    fontColor: "green",
-    fontSelection: "times new roman",
-    BackgroundColor: "black",
+var contentObject ={
+    contactbackgroundColorInput: "black",
     Phone: "123",
     Email: "joeygaitan707@gmail.com",
-    linkden: "google.com",
-    gitHub: "github.com"
+    Linkden: "google.com",
+    GitHub: "github.com"
 }
 
 var bodyObject = {
-    fontColor: "green",
-    fontSelection: "times new roman",
     BackgroundColor: "black",
     languages: "javascript",
     education: "oxford",
@@ -35,82 +31,44 @@ var bodyObject = {
 }
 
 var footerObject = {
-    fontColor: "green",
-    fontSelection: "times new roman",
     BackgroundColor: "black",
     year: "2018"
 }
 
-//  this display all the html of the page 
-//  document.querySelector('html').outerHTML
-
-//header tag change
-
-document.querySelector("#HeaderTab").addEventListener("change",function(event){
-
-   document.querySelector("title").textContent = event.target.value;
-   localStorage.setItem("headerTab", document.querySelector("title").textContent);
- })
- 
- document.querySelector("#HeaderFontColor").addEventListener("change",function(event){
-    
-    document.querySelector("HeaderFontColor").textContent = event.target.value;
- })
-
-document.querySelector("#HeaderFont").addEventListener("change",function(event){
-    
-   document.querySelector("HeaderFont").textContent = event.target.value;
-
-})
-//personal image
-document.querySelector("#PersonalImage").addEventListener("change",function(event){
-    
-    document.querySelector("personalImage").textContent = event.target.value;
- })
-
-document.querySelector("#Job").addEventListener("change",function(event){
-    
-    document.querySelector("Job").textContent = event.target.value;
- })
-
- document.querySelector("#Name").addEventListener("change",function(event){
-    
-    document.querySelector("Name").textContent = event.target.value;
- })
-
- document.querySelector("#Location").addEventListener("change",function(event){
-    
-    document.querySelector("Location").textContent = event.target.value;
- })
-
- document.querySelector("#BannerImage").addEventListener("change",function(event){
-    
-    document.querySelector("BannerImage").textContent = event.target.value;
- })
-
- //information changer portion
-
-
-
- //body information changer portion
-
-
-
- //footer portion
-
-
-
-
- // form handling
-
  document.querySelector('form').addEventListener('submit', function(event){
      event.preventDefault()
+    
+     //headerObject
+     headerObject.tabHeader = event.target.headerTab.value;
+     headerObject.fontColor = event.target.HeaderFontColor.value;
+     headerObject.fontSelection = event.target.HeaderFont.value;
+     headerObject.headerbackgroundColor = event.target.HeaderBackgroundColorInput.value;
+     headerObject.personalImage = event.target.PersonalImage.value;
+     headerObject.job = event.target.Job.value;
+     headerObject.firstLastNames = event.target.Name.value;
+     headerObject.location = event.target.Place.value;
 
-     HeaderObject.tabHeader = event.target.HeaderTab.value
+    //contentObject
+    contentObject.contactbackgroundColorInput = event.target.ContentBackgroundColor.value;
+    contentObject.Phone = event.target.PhoneNumber.value;
+    contentObject.Email = event.target.emailInput.value;
+    contentObject.Linkden = event.target.GitHubInput.value;
+    contentObject.GitHub = event.target.LinkdenInput.value;
 
-     localStorage.setItem('HeaderObject', JSON.stringify(HeaderObject))
+    //bodyObject
+    bodyObject.BackgroundColor = event.target.bodyBackgroundColor.value;
+    bodyObject.languages = event.target.LanguagesInput.value;
+    bodyObject.education = event.target.EducationInput.value;
+    bodyObject.Experience = event.target.ExperienceInput.value;
 
+    //footerObject
+    footerObject.BackgroundColor = event.target.footerBackgroundInput.value;
+    footerObject.year = event.target.footerCopyRight.value;
 
+     localStorage.setItem('HeaderObject', JSON.stringify(headerObject))
+     localStorage.setItem('ContactObject',JSON.stringify(contentObject))
+     localStorage.setItem("BodyObject", JSON.stringify(bodyObject))
+     localStorage.setItem("FooterObject", JSON.stringify(footerObject))
 
 
      window.location = 'constructor.html'
