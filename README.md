@@ -16,12 +16,14 @@ Actually done (October 8th 2018)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -I finished up the template for the main page.
 -Almost finished the intial design for the template.
+[action](http://snpy.in/IdXqE6)
 --------------------------------
 Tuesday (October 9th 2018) plan
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -link the template page with the main page
 -finish the editable webpage
 -finish the forms for the template html page
+![action](http://snpy.in/h5AOju)
 -------------------------------
 Actually done (October 9th 2018)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
