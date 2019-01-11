@@ -64,12 +64,13 @@ var footerObject = {
     //footerObject
     footerObject.BackgroundColor = event.target.footerBackgroundInput.value;
     footerObject.year = event.target.footerCopyRight.value;
+    
 
      localStorage.setItem('HeaderObject', JSON.stringify(headerObject))
      localStorage.setItem('ContactObject',JSON.stringify(contentObject))
      localStorage.setItem("BodyObject", JSON.stringify(bodyObject))
      localStorage.setItem("FooterObject", JSON.stringify(footerObject))
+    
 
-
-     window.location = 'constructor.html'
+     window.location = 'form.html'
  })

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Constructor >:{</title>
+    <title>Input Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/template.css">
     <script defer src="/js/main.js"> </script>
@@ -14,78 +14,75 @@
 
     <form>
           <label for="headerTab">Tab Header</label>
-          <input type="text" id="headerTab" name="headerTab">
+          <input type="text" id="headerTab" class="forms" name="headerTab" required>
         
         <label for="HeaderFontColor">font color</label>
-          <input type="color" id="HeaderFontColor" name="HeaderFontColor">
+          <input type="color" id="HeaderFontColor" class="forms" name="HeaderFontColor" required>
           <br><br>
           <label for="HeaderFont">Font</label>
-          <input type="text" id="HeaderFont" name="HeaderFont">
+          <input type="text" id="HeaderFont" class="forms" name="HeaderFont" required>
 
           <label for="HeaderBackgroundColorInput">background color</label>
-          <input type="color" id="HeaderBackgroundColorInput" name="HeaderBackgroundColorInput">
+          <input type="color" id="HeaderBackgroundColorInput" class="forms" name="HeaderBackgroundColorInput" required>
           <br><br>
           
           <label for="PersonalImage">Personal Image</label>
-          <input type="text" id="PersonalImage" name="PersonalImage">
+          <input type="text" id="PersonalImage" class="forms" name="PersonalImage" required>
 
           <label for="Job">Job title</label>
-          <input type="text" id="Job" name="Job">
+          <input type="text" id="Job" class="forms" name="Job" required>
         
         <label for="name">Name</label>
-          <input type="text" id="Name" name="name">
+          <input type="text" id="Name" class="forms" name="name" required>
         
           <label for="Place">Location</label>
-          <input type="text" id="Place" name="Place">
+          <input type="text" id="Place" class="forms" name="Place" required>
         <br><br>
 
         <p>Contact Information</p><br>
 
         <label for="ContentBackgroundColor">background color</label>
-          <input type="color" id="ContentBackgroundColor" name="ContentBackgroundColor">
+          <input type="color" id="ContentBackgroundColor" class="forms" name="ContentBackgroundColor" required>
           <br><br>
 
         <label for="PhoneNumber">Phone Number</label>
-        <input type="text" id="PhoneNumber" name="PhoneNumber">
+        <input type="text" id="PhoneNumber" class="forms" name="PhoneNumber" required>
 
         <label for="emailInput">Email</label>
-        <input type="text" id="emailInput" name="emailInput">
+        <input type="text" id="emailInput" class="forms" name="emailInput" required>
 
         <label for="GitHubInput">Github user url</label>
-        <input type="text" id="GitHubInput" name="GitHubInput">
+        <input type="text" id="GitHubInput" class="forms" name="GitHubInput" required>
 
         <label for="LinkdenInput">Linkden</label>
-        <input type="text" id="LinkdenInput" name="LinkdenInput">
+        <input type="text" id="LinkdenInput" class="forms" name="LinkdenInput" required>
 
         <p>Body Information</p><br>
 
         <label for="bodyBackgroundColor">Body background Color</label>
-          <input type="color" id="bodyBackgroundColor" name="bodyBackgroundColor">
+          <input type="color" id="bodyBackgroundColor" class="forms" name="bodyBackgroundColor" required>
         <br>
         <p>The computer Languages you know</p>
-        <textarea id="LanguagesInput">Some text...</textarea>
+        <textarea id="LanguagesInput" class="formBox" required>Some text...</textarea>
 
         <p>Education</p>
-        <textarea id="EducationInput">Some text...</textarea>
+        <textarea id="EducationInput" class="formBox" required>Some text...</textarea>
 
         <p>Experience</p>
-        <textarea id="ExperienceInput">Some text...</textarea>
+        <textarea id="ExperienceInput" class="formBox" required>Some text...</textarea>
         <br><br>
         <p>footer information</p>
 
         <label for= "footerBackgroundInput">background Color</label>
-        <input type="color" id= "footerBackgroundInput" name= "footerBackgroundInput">
+        <input type="color" id= "footerBackgroundInput" class="formBox" name= "footerBackgroundInput" required>
         <br><br>
 
         <label for= "footerCopyRight">Year for Copy Right</label>
-        <input type="number" id= "footerCopyRight" name= "footerCopyRight" min="2018" max="2020">       
+        <input type="number" id= "footerCopyRight" class="formBox" name= "footerCopyRight" min="2018" max="2020" required>       
         <br>
         <br>
-        <input type="submit" class="block" value="click me >:{" />
+        <input type="submit" value="Finished" />
     </form>
-
-    <!-- <button>Html</button> -->
 </body>
 </html>
 
-<!-- <a href="../html/constructor.html"></a> -->
