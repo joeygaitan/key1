@@ -19,5 +19,8 @@
   "homepage": "https://github.com/joeygaitan/key1#readme",
   "devDependencies": {
     "surge": "^0.20.1"
+  },
+  "dependencies": {
+    "clipboard-copy": "^2.0.1"
   }
 }

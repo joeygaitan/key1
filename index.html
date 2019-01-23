@@ -5,21 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script defer src="js/save.js"> </script>
     <title>Portfolio Builder</title>
 </head>
 <body id = "bodyIndex">
-        <div class="jumbotron bg-dark" id="headerContainer">
+        <div class="jumbotron bg-dark text-center" id="headerContainer">
             <img src="images/seattle.jpg" style="width:100%">
-            <div class="centered">
-                <h1 class = "display-1" id = "h">Coder Portfolio Builder</h1>
-                <h3 class = "display-6" id = "h">If you need to get a quick Coding Portfolio then you came to the right place.<br></h3>
-            </div>
-            <div class="top-left">
-                    <a href="https://github.com/joeygaitan"><i class="fa fa-github-square" style="font-size:24px;color:black;"></i></a>
-                    <a href="https://www.linkedin.com/in/joey-gaitan-a40961110/"><i class="fa fa-linkedin-square" style="font-size:24px;color:blue;"></i></a>
+            <div class="text-center">
+                <h1 class = "display-1" id = "h">Software Engineer Portfolio Builder</h1>
+                <h3 class = "display-6" id = "h">If you need to make quick a Coding Portfolio then you came to the right place.<br></h3>
             </div>
         </div>
     
@@ -27,20 +22,24 @@
         <div class="container">
         <h1>here's how it works!</h1>
 
-    <p>Step 1: Click the button that says click me. It will lead you to a questionaire on another page</p>
+    <p><strong>Step 1:</strong> Click the button that says click me. It will lead you to a questionaire on another page</p>
     
-    <p><strong>Step 2:</strong> Input the information and hit complete at the bottom, and it will give you back html where<br> you can copy paste it into a text editor or compiler to see your page.</p>
+    <p><strong>Step 2:</strong> Input the information and hit complete at the bottom, and it will give you back html where<br> you can copy and paste it into a text editor or compiler to see your page.</p>
 
-    <p><strong>Info</strong><br>Your Portfolio is stored conveniently at the bottom of the page<br> With your name.<br><br>
+    <p><strong>Info</strong><br>Your Portfolio is stored conveniently at the bottom of the page. All you have to do is click copy to ClipBoard and its copied.<br><br>
        The page will use two cdns, Bootstrap 4 framework and font-awesome. 
     </p>
+
+    <p><strong>Reccomended:</strong> I would reccomend deploying it to surge and you can always test it out on a site like repl</p>
         <button type="button" class="block"><a href="html/template.html">Create Site</a></button>
         </div>
     </div>
 
     <div class = "container ">
        <h1>saved html syntax from past project</h1>
-       <p id = "past"></p>
+       <div class = "remover"></div>
+       <p><br><br></p>
+       <div id = "past"></div>
     </div>
 </body>
 </html>
