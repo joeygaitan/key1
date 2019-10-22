@@ -40,6 +40,7 @@ if(file){
             document.querySelector("#past").textContent = ''
             document.querySelector('.remover')
             localStorage.clear();
+            remover.parentNode.removeChild(remover)
         } else {
 
         }
