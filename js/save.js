@@ -5,7 +5,7 @@ if(file){
     let editedHtml = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
     
     console.log(editedHtml)
-
+    
     let holder = document.querySelector("#past")
     let clipboardButton = document.createElement('BUTTON')
     let p = document.createElement('P')
@@ -16,6 +16,9 @@ if(file){
 
     holder.appendChild(clipboardButton)
     
+    let title = document.querySelector('.titleButton')
+    title.innerHTML = 'saved html syntax from past project'
+
     function Clipboard(){
         console.log('in here')
         p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
