@@ -20,10 +20,17 @@ if(file){
     title.innerHTML = 'saved html syntax from past project'
 
     function Clipboard(){
-        console.log('in here')
-        p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
-        holder.appendChild(p)
+        // p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
+        // holder.appendChild(p)
+        
+        holder.select();
+        holder.setSelectionRange(0,99999);
+
+        document.execCommand('copy');
+
+        alert("Copied to clipboard")
     }
+    
     
 
     let remover = document.querySelector('.remover')
