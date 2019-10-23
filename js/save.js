@@ -10,29 +10,31 @@ if(file){
     let holder = document.querySelector("#past")
     let clipboardButton = document.createElement('BUTTON')
     let p = document.createElement('P')
-    clipboardButton.setAttribute('onClick', 'Clipboard()')
     clipboardButton.setAttribute("type", "button")
     clipboardButton.setAttribute('class', 'btn btn-primary btn-lg btn-block');
+    clipboardButton.setAttribute('id','clip')
     clipboardButton.innerHTML = 'Display to Copy'
 
     holder.appendChild(clipboardButton)
 
-    function Clipboard(){
-        let title = document.querySelector('.titleButton')
-        title.innerHTML = 'Save HTML to copy'
-        
-        p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
-        holder.appendChild(p)
-        
-        holder.select();
-        holder.setSelectionRange(0,99999);
+    // holder.addEventListener('click', Clipboard)
 
-        document.execCommand('copy');
+    // if(file != ''){
+    //     let title = document.querySelector('.titleButton')
+    //     title.innerHTML = 'Save HTML to copy'
+    // }
 
-        alert("Copied to clipboard");
-    }
-    
-    
+    // function Clipboard(){
+    //     p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
+    //     // holder.appendChild(p)
+
+    //     holder.select();
+    //     holder.setSelectionRange(0,99999);
+
+    //     document.execCommand('copy');
+
+    //     alert("Copied to clipboard");
+    // }
 
     let remover = document.querySelector('.remover')
     let button = document.createElement("BUTTON")
