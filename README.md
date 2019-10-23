@@ -1,9 +1,15 @@
 URL: http://software-engineer-portfolio-builder.surge.sh
 
-
 1st-fork and clone repo
 2nd-clone the repo
 3d-run this command in terminal, npm install
+
+running locally
+
+* after third step
+```
+npm run dev
+```
 
 cover :)
 ![Alt text](https://github.com/joeygaitan/key1/tree/master/images/cover.jpeg  "Screenshot")
@@ -62,3 +68,4 @@ thursday done (October 11th 2018)
 -finished the constructor
 -stored the objects into local storage
 -display the new dom onto the index.html
+

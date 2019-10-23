@@ -17,24 +17,24 @@ if(file){
 
     holder.appendChild(clipboardButton)
 
-    // holder.addEventListener('click', Clipboard)
+    holder.addEventListener('click', Clipboard)
 
-    // if(file != ''){
-    //     let title = document.querySelector('.titleButton')
-    //     title.innerHTML = 'Save HTML to copy'
-    // }
+    if(file != ''){
+        let title = document.querySelector('.titleButton')
+        title.innerHTML = 'Save HTML to copy'
+    }
 
-    // function Clipboard(){
-    //     p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
-    //     // holder.appendChild(p)
+    function Clipboard(){
+        p.innerText = file.replace(/\\n/g,'').replace(/\\t/g,'').replace(/\\"/g,'"');
+        // holder.appendChild(p)
 
-    //     holder.select();
-    //     holder.setSelectionRange(0,99999);
+        holder.select();
+        holder.setSelectionRange(0,99999);
 
-    //     document.execCommand('copy');
+        document.execCommand('copy');
 
-    //     alert("Copied to clipboard");
-    // }
+        alert("Copied to clipboard");
+    }
 
     let remover = document.querySelector('.remover')
     let button = document.createElement("BUTTON")
